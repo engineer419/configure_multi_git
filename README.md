@@ -1,7 +1,7 @@
 # Configuring Git for GitHub and GitLab with Private Email and Separate Remotes
 
+## Expected Result
 At the conclusion of this, your Git environment will be configured to:
-
 - Push to both GitHub and GitLab using separate remotes.
 - Obfuscate your email address using the no-reply email addresses from both platforms.
 - Use platform-specific usernames for commits pushed to GitHub and GitLab.
@@ -151,3 +151,19 @@ For GitLab:
 
 `git pushall`
 
+
+## Optionally compile this with Clang or GCC, add it to your path
+
+OSX: `clang -O2 main.cpp -o multi_git`
+
+Or
+
+Linux: `g++ -O2 main.cpp -o multi_git`
+
+Run the binary as follows:
+
+`./mult_git`
+
+For example, if you want to add this to your path, it's just:
+
+`export PATH="$PATH:/path/to/your/multi_git"`
